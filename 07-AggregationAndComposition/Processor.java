@@ -5,12 +5,7 @@ public class Processor {
     private double speed;
     private boolean isRunning;
 
-    public Processor(String brand,String model,double speed){
-        this.brand=brand;
-
-        this.model=model;
-        this.speed=speed;
-    }
+    
 
     public String getBrand() {
         return brand;
