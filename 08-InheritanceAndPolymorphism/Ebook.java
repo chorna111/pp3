@@ -10,24 +10,23 @@ public class Ebook extends Book{
 
     }
 
-    public Ebook(String title,String author,String fileName){
-        super(title,author);
+    public Ebook(String title,Writer writer,String fileName,Publisher publisher,int publicationYear){
+        super(title,writer,publisher,publicationYear);
         this.fileName=fileName;
         
     }
     public String display(){
-        return String.format("Ebook title: %s\nEbook author:%s\nEbook file name: %s",super.getTitle(),super.getAuthor(),fileName);
+        return String.format("Ebook title: %s\nEbook author:%s %s\nEbook file name: %s\nPublisher:%s\nCity:%s\nPublication year:%d",super.getTitle(),super.getWriter().getWriterName(),super.getWriter().getWriterSurname(),fileName,super.getPublisher().getName(),super.getPublisher().getCity(),super.getPublicationYear());
     }
 
-    public static void main(String[] args) {
-        Book b1=new Book("Harry Potter","Joan Rowling");
-        Ebook eb1=new Ebook(b1.getTitle(),b1.getAuthor(),"hp.txt");
-        System.out.println(eb1.display());
-        Ebook eb2=new Ebook("1984","George Orwell","1984.txt");
-        System.out.println(eb2.display());
-    }
+   
 
     
 
     
 }
+
+    
+
+    
+
