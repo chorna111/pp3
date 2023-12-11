@@ -1,5 +1,4 @@
 package mock;
-
 public class Arrays {
     private int[] arr1;
     private int[] arr2;
