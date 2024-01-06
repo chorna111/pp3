@@ -14,6 +14,19 @@ public class Test {
         System.out.println(t);
         t.volumeDown();
         System.out.println(t);
+        t.off();
+        System.out.println(t);
+        t.on();
+        System.out.println(t);
+        System.out.println(t.setChannel(15));
+        System.out.println(t.setVolume(7));
+        System.out.println(t);
+        t.off();
+        System.out.println(t);
+        t.on();
+        System.out.println(t.displayListOfStations());        
+
+
 
 
 
