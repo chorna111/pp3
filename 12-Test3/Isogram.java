@@ -1,4 +1,3 @@
-
 public  class Isogram {
     
     
@@ -18,10 +17,12 @@ public  class Isogram {
                     }
                 }if(total>0){
                     return false;
-                }
+                }else{
+                    continue;}
             }
             return true;
         }
+      
         
     }
     

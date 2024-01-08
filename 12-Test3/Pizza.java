@@ -16,9 +16,10 @@ public class Pizza extends Food implements Extra{
     };
     public float discount(){
         if(price>=30){
-            price-=price*0.05;
+            return (float)0.05*price;
+        }else{
+            return 0;
         }
-        return price;
     }
     public float delivery(){
         
